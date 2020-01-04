@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #000;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    color:rgb(12, 51, 180);
+}
+
+.animation2{
+    width: 100%;
+    height: 800px;
+    text-align: left;
+    transform: translateX(0%);
+    background-image: url(img/clearbluesky.jpeg);
+    background-size: cover;
+    /*position: absolute;*/
+}
+
+.animation2 img{
+    height: 9rem;
+    margin-top: 19rem;
+    position: absolute;
+    animation: pakthunder 5s linear infinite;
+   
+}
+
+@keyframes pakthunder {
+    100% {
+      transform: translateX(calc(100vw + 350px));
+    }
+}
+
+.animation3{
+    width: 100%;
+    height: 800px;
+    text-align: left;
+    background-image: url(img/sunset.jpg);
+    background-size: cover;
+}
+
+#axis{
+    animation: rocket 2s linear infinite;
+}
+
+#axis img{
+    margin-top: 30rem;
+    height: 300px;
+    width: 500px;
+}
+
+@keyframes rocket {
+    100% {
+        transform: translate(900px,-500px);
+        -webkit-transform: translate(900px,-500px);
+        -o-transform: translate(900px,-500px); 
+        -moz-transform: translate(900px,-500px);
+    }
+}
+
+.animation4{
+    width: 100%;
+    height: 800px;
+    text-align: right;
+    background-image: url(img/islamabad2.jpg);
+    background-size: cover;
+}
+
+#axis2 img{
+    margin-top: 15rem;
+    height: 150px;
+    width: 250px;
+}
+
+#axis2{
+    animation: rocket2 2s linear infinite;
+}
+
+@keyframes rocket2{
+    100% {
+        transform: translate(-1400px,-60px);
+        -webkit-transform: translate(-1400px,-60px);
+        -o-transform: translate(-1400px,-60px); 
+        -moz-transform: translate(-1400px,-60px);
+    }
+}
+
+.animation5{
+    width: 100%;
+    height: 800px;
+    text-align: left;
+    background-image: url(img/kashmir.jpg);
+    background-size: cover;
+}
+
+#axis3 img{
+    margin-top: 10rem;
+    height: 500px;
+    width: 650px;
+}
+
+#axis3{
+    animation: rocket3 3s linear infinite;
+}
+
+@keyframes rocket3{
+    100% {
+        transform: translate(1100px,-200px);
+        -webkit-transform: translate(1100px,-200px);
+        -o-transform: translate(1100px,-200px); 
+        -moz-transform: translate(1100px,-200px);
+    }
+}
+
+.info{
+    width: 100%;
+    height: 800px;
+    background: #fff;
+}
+
+.thunder{
+    float: left;
+    height: 700px;
+    width: 700px;
+    margin-left: 8rem;
+}
+
+#sprite {
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    margin-top: 15rem;
+    margin-left: 10rem;
+    background: rgb(231, 228, 228);
+}
+
+#sprite .slide{
+    position: absolute;
+    -webkit-animation-duration:4000ms;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:step-start;
+    -webkit-animation-name:animate01;
+    -webkit-animation-direction:forward;
+    -moz-animation-duration:4000ms;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:step-start;
+    -moz-animation-name:animate01;
+    -moz-animation-direction:forward;
+}
+
+@-webkit-keyframes animate01 {
+0%           { top:0; }
+20%          { top:-300px; }
+40%          { top:-600px;}
+60%          { top:-900px; }
+80%          { top:-1200px; }
+100%         { top:0 }
+}
+
+@-moz-keyframes animate01 {
+0%           { top:0; }
+20%          { top:-305px; }
+40%          { top:-605px;}
+60%          { top:-905px; }
+80%          { top:-1205px; }
+100%         { top:0 }
+}
